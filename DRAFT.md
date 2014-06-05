@@ -105,8 +105,20 @@ O fluxo da aplicação é codificado nas views. Uma única view pode processar f
 URLs
 ====
 
+Permite configurar as URLs do projeto.
+Não depende do sistema de extensões. Sem .asp, .php ou qualquer outra extensão.
+URLs usam expressões regulares para definir como as views devem ser acessadas.
+Elas permitem parâmetros e validações.
+URLs podem ter subconfigurações.
+
 Templates
 =========
+
+Uma engine que contempla a escrita conteúdo no HTML.
+A sintaxe é muito parecida com Jinja.
+Usa tags.
+A linguagem de template suporta a saída de variáveis, laços e funções que vêm com o Django.
+E o mais interessante é que ela suporta herança de templates.
 
 Testes
 ======
