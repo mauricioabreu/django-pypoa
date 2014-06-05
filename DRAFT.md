@@ -73,3 +73,43 @@ minhaapp/
 - models.py
 - tests.py
 - views.py
+
+Models
+======
+
+Models são representações dos seus dados. Eles têm atributos \(campos\) e comportamentos.
+Cada model mapeia uma única tabela de um banco de dados.
+Models abstratos que não geram tabela, mas compõem atributos/comportamento.
+Models proxy são apenas models para mudar o comportamento. É útil quando se quer inferir comportamentos em um model de terceiros.
+
+Forms
+=====
+
+Forms são maneiras de entrar com dados na aplicação. Estes forms podem ou não ser **acoplados**.
+Um form pode ou não ser acoplado a um model.
+Quando um form é acoplado os campos são sanitizados e validados de acordo com os campos do model.
+Quando não são acomplados, cada campo pode ter seus tipo de dado e uma validação.
+A renderização do form fica mais fácil de controlar.
+
+
+Views
+=====
+
+Views são funções ou classes Python que gerenciam uma requisição.
+Responsáveis por gerenciar o **Request** e o **Response**.
+Recebe: **Request**
+Retorna: **Response**
+O fluxo da aplicação é codificado nas views. Uma única view pode processar forms, models e templates.
+
+
+URLs
+====
+
+Templates
+=========
+
+Testes
+======
+
+Encerramento
+============
