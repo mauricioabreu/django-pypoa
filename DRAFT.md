@@ -13,9 +13,9 @@ Como instalar?
 ==============
 
 É possível instalar de várias maneiras. A melhor maneira de se instalar um pacote Python é utilizando o **pip**:
-pip install Django (instalará a versão atual, 1.6.5 até o momento desta apresentação).
+pip install Django (instalará a versão atual, 1.6.5 até o momento desta apresentação).  
 Para instalar a versão beta você pode utilizar pip e passando como parâmetro um link externo:
-pip install https://www.djangoproject.com/download/1.7.b4/tarball/
+pip install https://www.djangoproject.com/download/1.7.b4/tarball/  
 Para instalar a versão de desenvolvimento (não segura) você pode utilizar o **git** baixando o repositório diretamente do .git do **Github**.
 git clone https://github.com/django/django.git
 
@@ -28,10 +28,10 @@ Primeiros passos
 ================
 
 Após instalar o Django, é possível facilmente começar um novo projeto. Django vem com uma camada de comandos padrões. Um deles é o **django-admin**. Com ele você pode começar um novo projeto executando a seguinte linha no terminal:
-django-admin.py startproject nomedoprojeto
+django-admin.py startproject nomedoprojeto  
 O Django elimina o boilerplate que muitos frameworks não eliminam, deixando a carga do usuário criar sua própria estrutura de projeto. Isso é debatível.
 
-A estrutura do projeto ficará assim:
+A estrutura do projeto ficará assim:  
 nomedoprojeto
 - manage.py
 - nomedoprojeto/
@@ -41,17 +41,17 @@ nomedoprojeto
 -  wsgi.py
 
 Breve descrição:
-manage.py é utilizado para executar comandos padrões e customizados após o projeto ser criado. Não utilizar o django-admin.py para executar comandos.
-nomedoprojeto é onde ficam os principais arquivos do projeto, no mesmo nível das **apps**.
-settings.py é onde o Django busca configuração de debug, bancos de dados, caches, configurações customizadas, etc.
-urls.py é a raiz das urls. Todas as principais rotas devem ser descritas neste urls.py, porém cada projeto pode ter o seu, organizando melhor as urls por **app**.
+manage.py é utilizado para executar comandos padrões e customizados após o projeto ser criado. Não utilizar o django-admin.py para executar comandos.  
+nomedoprojeto é onde ficam os principais arquivos do projeto, no mesmo nível das **apps**.  
+settings.py é onde o Django busca configuração de debug, bancos de dados, caches, configurações customizadas, etc.  
+urls.py é a raiz das urls. Todas as principais rotas devem ser descritas neste urls.py, porém cada projeto pode ter o seu, organizando melhor as urls por **app**.  
 wsgi.py é o arquivo usado para fazer a implementação do projeto em produção. Os Webservers com Apache, Nginx, Gunicorn, etc usam esse arquivo como container de aplicação web.
 
 Diferença entre app e projeto
 =============================
 
 Em Django há uma diferença entre app e projeto.
-O projeto é o todo e um projeto pode conter nenhuma ou múltiplas apps.
+O projeto é o todo e um projeto pode conter nenhuma ou múltiplas apps.  
 Uma app é utilizada para descrever o comportamento do projeto. Cada app pode ter modelos, formulários e templates. E estes podem ser reutilizados em outras partes do seu projeto ou até em novos projetos.
 
 Executando o projeto recém criado
@@ -77,7 +77,7 @@ minhaapp/
 Models
 ======
 
-Models são representações dos seus dados. Eles têm atributos \(campos\) e comportamentos.
+Models são representações dos seus dados. Eles têm atributos (campos) e comportamentos.
 Cada model mapeia uma única tabela de um banco de dados.
 Models abstratos que não geram tabela, mas compõem atributos/comportamento.
 Models proxy são apenas models para mudar o comportamento. É útil quando se quer inferir comportamentos em um model de terceiros.
