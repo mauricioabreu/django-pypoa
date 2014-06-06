@@ -123,5 +123,24 @@ E o mais interessante é que ela suporta herança de templates.
 Testes
 ======
 
+O django fornece ferramentas para automatizar os testes do seu projeto.
+Os testes são coletados dentro das apps e executados, gerando um relatório final.  
+É possível validar os valores do objeto **request**, **forms**, **mensagens**, **validações**, **models** e muito mais.
+A ferramenta **Client** pode ser usada para simular requisições como se fossem feitas pelo seu browser.  
+Outras ferramentas: Nose, py.test
+
 Encerramento
 ============
+
+Django é um framework muito completo. O termo **full stack** se encaixa bem ao Django pois ele fornece todas as ferramentas para construir um projeto web.  
+Há muitas apps atualizadas no **Github** e no **Bitbucket**.
+
+A Azion usa algumas apps interessantes e é bom aprender Django lendo o código delas:
+
+* South
+* django-parsley
+* django-pjax
+* django-compressor
+* django-extensions
+* django-debug-toolbar
+* django-jenkins
